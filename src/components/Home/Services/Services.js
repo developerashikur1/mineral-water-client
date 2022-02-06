@@ -1,18 +1,21 @@
 import { Box, Button, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
 import { indigo, lightBlue } from '@mui/material/colors';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const services = [
-    {id:1, img:"https://i.ibb.co/KV7HQGB/service-6.jpg", name:"Residential Waters", description:"We supply residential water and its price depends on your family members and how much water you are using every month.", price: 35 },
-    {id:2, img:"https://i.ibb.co/mJW5btz/service-5.jpg",  name:"Commercial Waters", description:"We now supply pure, fresh and healthy water for medical, industrial, commercial, and laboratory use.", price: 32 },
-    {id:3, img:"https://i.ibb.co/KXwzN8Q/service-4.jpg",  name:"Filtration Plants", description:"Filtration plants machines are now selling at our company for your benefit and giving free service.", price: 40 },
-    {id:4, img:"https://i.ibb.co/0jhM2fb/service-3.jpg",  name:"Free Water Delivery", description:"We are now giving you free water delivery. If you give us an order you don’t have any need to bother with the service money.", price: 30 },
-    {id:5, img:"https://i.ibb.co/r6DGnQR/service-2.jpg",  name:"Water Softening", description:"Water has ions, calcium, magnesium and iron due to water softening we remove all these from the water since it is harmful.", price: 35 },
-    {id:6, img:"https://i.ibb.co/09xdPRH/service-1.jpg",  name:"Coolers & Dispensers", description:"For your advantage of drinking safe, pure, healthy and fresh water we now started our new service coolers and dispensers.", price: 25 },
-    ];       
 
 const Services = () => {
-    console.log(services)
+    
+    const [services, setServices] = useState([]);
+
+    useEffect(()=>{
+        const uri = 'http://localhost:5000/water_service';
+        fetch(uri)
+        .then(res=>res.json())
+        .then(data=>setServices(data))
+    },[])
+
+
+
     return (
         <>
          <Box sx={{ py:12}}>
@@ -26,7 +29,7 @@ const Services = () => {
 
 
                 <Grid container spacing={3}>
-                    {services.map(service=><Grid key={service?.id} item xs={12} md={4}>
+                    {services.map(service=><Grid key={service?._id} item xs={12} md={4}>
                         <Card sx={{ textAlign:'center' }}>
                             <CardMedia
                                 component="img"
