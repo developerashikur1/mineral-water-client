@@ -1,0 +1,59 @@
+.teamSection {
+  border-radius: 1rem;
+  background-color: #eff0f1;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.memberImg {
+  width: 85%;
+  border-radius: 100%;
+  box-shadow: 0.1rem 0.1rem 1rem inset grey;
+}
+
+.cardManager {
+  padding: 3rem 5rem;
+}
+
+.subTitle {
+  background-color: white;
+  font-weight: 800 !important;
+  color: #5333f2;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.5rem 2rem 0.5rem rgba(0, 0, 0, 0.13);
+}
+
+.title {
+  color: #2e2d2d;
+  font-weight: 800 !important;
+  font-size: 3rem !important;
+  line-height: 3rem !important;
+}
+
+.teamMemberCard {
+  background-color: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+  transition: ease-in 0.3s !important;
+}
+
+.teamMemberCard:hover {
+  cursor: pointer;
+  background-color: white !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .teamSection {
+    padding: 1rem;
+  }
+  .cardManager {
+    padding: 1rem 0 2rem 0;
+  }
+  .title {
+    color: #2e2d2d;
+    font-weight: 800 !important;
+    font-size: 2.2rem !important;
+    line-height: 2.2rem !important;
+  }
+}

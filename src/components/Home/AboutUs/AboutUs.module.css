@@ -1,0 +1,124 @@
+.mainSection {
+  padding: 5rem 0rem;
+  background-image: url("https://i.ibb.co/zX4Yzxf/h2-bg-section-04.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+
+.subTitle {
+  font-weight: 800 !important;
+  color: #5333f2;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.5rem 2rem 0.5rem rgba(0, 0, 0, 0.13);
+}
+
+.title {
+  color: #2e2d2d;
+  font-weight: 800 !important;
+  font-size: 3rem !important;
+  line-height: 3rem !important;
+}
+
+.text {
+  color: #67687a !important;
+  line-height: 26px !important;
+}
+
+.nestedMenu {
+  border-top: 0.1rem solid rgba(128, 128, 128, 0.151);
+  border-bottom: 0.1rem solid rgba(128, 128, 128, 0.151);
+  padding: 0;
+}
+
+.nestedMenuButton {
+  min-height: 5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(90, 90, 90);
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.nestedMenuButton:hover {
+  border-bottom: 0.3rem solid #1475f7;
+  transition: all ease-in-out 0.2s;
+}
+
+.nestedMenuButton:active {
+  border-bottom: 0.3rem solid #5333f2;
+}
+
+.viewMoreButton {
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 700;
+  /* background-image: linear-gradient(
+    90deg,
+    #7114ef,
+    #7114ef 0%,
+    #1475f7 100%
+  ) !important; */
+  background-color: transparent !important;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 2rem 0.5rem rgba(0, 0, 0, 0.13);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  background-color: #1a237e !important;
+  transition: ease-in-out 0.4s;
+}
+
+.viewMoreButton:hover {
+  background-color: #03a9f4 !important;
+  cursor: pointer;
+  /* background-image: linear-gradient(
+    90deg,
+    #1475f7 0%,
+    #7114ef 100%,
+    #7114ef
+  ) !important; */
+}
+
+.aboutImg {
+  width: 80%;
+  position: relative;
+  left: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 1rem 0 rgb(0 0 0 / 20%), 0 1rem 2rem 0 rgb(0 0 0 / 19%) !important;
+  background-color: yellow;
+  background-repeat: repeat;
+}
+
+.reviewerPositionName {
+  color: #5333f2;
+}
+
+.aboutUsSideGap {
+  padding-right: 5rem !important;
+}
+
+/* Responsive Mode */
+@media only screen and (max-width: 768px) {
+  .title {
+    color: #2e2d2d;
+    font-weight: 800 !important;
+    font-size: 2.2rem !important;
+    line-height: 2.2rem !important;
+  }
+
+  .reviewerPositionName {
+    color: #5333f2;
+    font-size: 1rem !important;
+  }
+  .thirdButton {
+    text-align: center;
+  }
+  .aboutUsSideGap {
+    padding-right: 0 !important;
+  }
+}

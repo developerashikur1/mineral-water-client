@@ -1,0 +1,45 @@
+.HomeMain {
+  background: url("https://i.ibb.co/zfxzPMc/home-2-bg.png");
+  background-repeat: no-repeat;
+  background-position: auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.orderForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.orderForm input {
+  outline: none;
+  border-radius: 1rem;
+  height: 3rem;
+  border: 1px rgba(128, 128, 128, 0.329) solid;
+  padding-left: 1rem;
+  transition: ease-in-out 0.2s;
+}
+
+.orderForm input:hover {
+  outline: 1px solid #03a9f4;
+}
+
+.orderForm button {
+  color: whitesmoke !important;
+  border-radius: 1rem;
+  height: 3rem;
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease-in-out 0.4s;
+  background-color: #1a237e !important;
+}
+
+.orderForm button:hover {
+  background-color: #03a9f4 !important;
+}
+
+/* .orderForm input {
+  border: none !important;
+} */
