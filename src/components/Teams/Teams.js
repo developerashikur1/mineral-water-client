@@ -13,7 +13,7 @@ const Teams = () => {
     const [teamMembers, setTeamMembers] = useState([]);
 
     useEffect(()=>{
-        const uri = 'https://lit-woodland-72360.herokuapp.com/teams';
+        const uri = 'http://localhost:5000/teams';
         fetch(uri)
         .then(res=>res.json())
         .then(data=>setTeamMembers(data))

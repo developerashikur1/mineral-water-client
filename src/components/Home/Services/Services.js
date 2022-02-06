@@ -8,7 +8,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(()=>{
-        const uri = 'https://lit-woodland-72360.herokuapp.com/water_service';
+        const uri = 'http://localhost:5000/water_service';
         fetch(uri)
         .then(res=>res.json())
         .then(data=>setServices(data))
